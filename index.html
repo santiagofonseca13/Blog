@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Santiago Fonseca | Ingeniero de Sistemas</title>
+    
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/606/606230.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc; /* Fondo clarito (Slate-50) */
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+        /* Gradiente sutil para fondo claro */
+        .bg-gradient-light {
+            background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+        /* Navegación flotante estilo Glassmorphism Light */
+        .nav-float {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .project-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #38bdf8;
+        }
+    </style>
+</head>
+<body class="relative">
+    <div class="absolute top-0 z-[-1] h-[500px] w-full bg-gradient-light"></div>
+
+    <header class="fixed top-4 w-full z-50 flex justify-center">
+        <nav class="nav-float px-6 py-2 rounded-full flex gap-6 text-sm font-semibold">
+            <a href="#inicio" class="hover:text-sky-500 transition">Inicio</a>
+            <a href="#experiencia" class="hover:text-sky-500 transition">Experiencia</a>
+            <a href="#proyectos" class="hover:text-sky-500 transition">Proyectos</a>
+            <a href="#habilidades" class="hover:text-sky-500 transition">Skills</a>
+        </nav>
+    </header>
+
+    <main class="max-w-[800px] mx-auto px-6">
+        
+        <section id="inicio" class="pt-32 pb-20">
+            <div class="flex items-center gap-4 mb-6">
+                <img src="https://ui-avatars.com/api/?name=Oscar+Fonseca&background=0ea5e9&color=fff&size=128" alt="Oscar Fonseca" class="rounded-2xl size-20 shadow-md">
+                <span class="bg-sky-100 text-sky-700 text-xs font-bold px-3 py-1 rounded-full border border-sky-200">Disponible para nuevos retos</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Hola, Soy Santiago Fonseca</h1>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                <span class="text-sky-600 font-bold">Estudiante Ingeniero de Sistemas</span> con interés en desarrollo de
+                software, bases de datos y tecnología en general, me gusta la
+                programación y tengo experiencia en proyectos académicos usando Java,
+                Python, php, MySQL, Docker, Linux etc.  Siempre dispuesto a adquirir más conocimiento,
+                aprender a manejar nuevas herramientas y adaptarme al cambio.
+            </p>
+            
+            <div class="flex flex-wrap gap-3 mt-8">
+                <a href="www.linkedin.com/in/oscar-santiago-f-684142233" download target="_blank" class="bg-sky-500 text-white px-5 py-2.5 rounded-xl hover:bg-sky-600 transition flex items-center gap-2 shadow-md">
+                    <i class="fab fa-linkedin text-xl"></i> linkedin
+                </a>
+                <a href="https://github.com/santiagofonseca13" target="_blank" class="bg-white border border-slate-200 px-5 py-2.5 rounded-xl hover:bg-slate-50 transition flex items-center gap-2 text-green-600 shadow-sm">
+                    <i class="fab fa-github text-xl"></i> GitHub
+                </a>
+                <a href="mailto:santiago2004gjq@gmail.com" class="bg-slate-900 text-white px-5 py-2.5 rounded-xl hover:bg-slate-800 transition flex items-center gap-2 shadow-sm">
+                    <i class="fas fa-envelope"></i> Correo
+                </a>
+                <a href="https://wa.me/573022920251" target="_blank" class="bg-white border border-slate-200 px-5 py-2.5 rounded-xl hover:bg-slate-50 transition flex items-center gap-2 text-green-600 shadow-sm">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="ruta/tu-hoja-de-vida.pdf" download target="_blank" class="bg-sky-500 text-white px-5 py-2.5 rounded-xl hover:bg-sky-600 transition flex items-center gap-2 shadow-md">
+                    <i class="fas fa-file-pdf"></i> Ver HV (PDF)
+                </a>
+            </div>
+        </section>
+
+        <section id="habilidades" class="py-12 pb-32">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800">Habilidades Técnicas</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm hover:border-sky-400 transition cursor-default">Python</span>
+                <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm hover:border-sky-400 transition cursor-default">Java</span>
+                <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm hover:border-sky-400 transition cursor-default">SQL & NoSQL</span>
+                <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm hover:border-sky-400 transition cursor-default">Docker</span>
+                <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm hover:border-sky-400 transition cursor-default">Git & GitHub</span>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-12">
+            <h2 class="text-2xl font-bold mb-10 flex items-center gap-3 text-slate-800">
+                <i class="fas fa-briefcase text-sky-500"></i> Experiencia Profesional
+            </h2>
+            <div class="space-y-12">
+
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 size-4 bg-sky-500 rounded-full ring-4 ring-white"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Intercambio Academico</h3>
+                    <p class="text-sky-600 font-medium">Instituto Tecnologico de Queretaro (ITQ) Mexico | Agosto - Diciembre 2025.</p>
+                    <div class="text-slate-600 mt-3 leading-relaxed">
+                    <p class="mb-2">En mi 7° semestre en el ITQ, decidi sacar provecho a mi intercambio realizando las siguientes actividades.</p>
+                    <ul class="list-disc ml-5 space-y-1">
+                        <li><strong>Sistemas Operativos:</strong> Virtualización de maquinas virtuales tanto de VirtualBox como VMware.</li>
+                        <li><strong>Infraestructura:</strong> Administración  Servidores Linux, virtualización con contenedores y gestión de redes (Docker).</li>
+                        <li><strong>Bases de Datos:</strong> Administración de bases de datos relacionales (Oracle) y aplicación de metodologías de Ciencia de Datos.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 size-4 bg-sky-500 rounded-full ring-4 ring-white"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Practica de Responsabilidad Social.</h3>
+                    <p class="text-sky-600 font-medium">Uniminuto - Secretaría de Transito y Transporte Zipaquira | Enero - Julio 2025.</p>
+                    <p class="text-slate-600 mt-3 leading-relaxed">Explicar a diferentes actores viales, 
+                        señales de transito, derechos y deberes, ademas de diseñar un formulaio acerca de la norma tecnica Colombiana.</p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 size-4 bg-sky-500 rounded-full ring-4 ring-white"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Auxiliar de Garantias - Técnico en Sistemas.</h3>
+                    <p class="text-sky-600 font-medium">MPS Mayorista de Colombia S.A. | 18 Octubre 2022 - 30 Enero 2023.</p>
+                    <p class="text-slate-600 mt-3 leading-relaxed">Atencion al cliente, tramites de garantías, revisión de equipos de cómputo, 
+                        servicio en Instalacion de sistemas operativos y mantenimientos.</p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 size-4 bg-sky-500 rounded-full ring-4 ring-white"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Aprendiz del Sena - Técnico en Sistemas.</h3>
+                    <p class="text-sky-600 font-medium">MPS Mayorista de Colombia S.A. | 19 Abril - 18 Octubre 2022.</p>
+                    <p class="text-slate-600 mt-3 leading-relaxed">Instalación de sistemas operativos, mantenimientos ampliativos, 
+                        correctivos, manejo de correo electrónico, paquete ofimático, tramites de garantías y atención al cliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="py-12">
+            <h2 class="text-2xl font-bold mb-10 flex items-center gap-3 text-slate-800">
+                <i class="fas fa-rocket text-sky-500"></i> Proyectos
+            </h2>
+            <div class="grid gap-8">
+                
+                <article class="project-card p-6 rounded-2xl flex flex-col md:flex-row gap-6">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=400" class="w-full md:w-48 h-32 object-cover rounded-xl" alt="Data Project">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Sistema Inteligente de Inventarios</h3>
+                        <p class="text-slate-600 text-sm mt-2 mb-4">Desarrollado en Python y PostgreSQL. Permite la predicción de stock mediante algoritmos de aprendizaje automático básico.</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-500 font-bold uppercase tracking-widest">Python</span>
+                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-500 font-bold uppercase tracking-widest">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="https://github.com/tu-usuario/proyecto" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition">
+                            <i class="fab fa-github"></i> Ver Código
+                        </a>
+                        <a href="https://tu-demo.com" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-sky-600 border border-sky-200 hover:bg-sky-50 px-4 py-2 rounded-lg transition">
+                            <i class="fas fa-external-link-alt text-xs"></i> Demo en vivo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card p-6 rounded-2xl flex flex-col md:flex-row gap-6">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=400" class="w-full md:w-48 h-32 object-cover rounded-xl" alt="Cloud Project">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Dashboard de Monitoreo de Redes</h3>
+                        <p class="text-slate-600 text-sm mt-2 mb-4">Aplicación para visualizar en tiempo real el tráfico de red y detectar anomalías de seguridad en servidores locales.</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-500 font-bold uppercase tracking-widest">Docker</span>
+                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-500 font-bold uppercase tracking-widest">React</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/tu-usuario/proyecto-redes" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition">
+                            <i class="fab fa-github"></i> Ver Código
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-sm font-semibold text-sky-600 border border-sky-200 hover:bg-sky-50 px-4 py-2 rounded-lg transition">
+                            <i class="fas fa-external-link-alt text-xs"></i> Preview
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="certificaciones" class="py-12">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 flex items-center gap-3">
+                <i class="fas fa-certificate text-sky-500"></i> Certificaciones
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-white border border-slate-200 p-5 rounded-2xl flex flex-col justify-between hover:border-sky-400 transition shadow-sm group">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-sky-50 p-3 rounded-lg text-sky-600 group-hover:bg-sky-500 group-hover:text-white transition">
+                            <i class="fab fa-linux text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Linux Essentials</h4>
+                            <p class="text-sm text-slate-500">Cisco Networking Academy</p>
+                            <p class="text-xs text-sky-600 font-medium mt-1">10 Sep 2025</p>
+                        </div>
+                    </div>
+                    <a href="URL_O_RUTA_DEL_PDF" target="_blank" class="mt-4 text-center text-xs font-bold text-sky-600 bg-sky-50 py-2 rounded-lg hover:bg-sky-100 transition">
+                        <i class="fas fa-external-link-alt mr-1"></i> Ver Credencial
+                    </a>
+                </div>
+
+                <div class="bg-white border border-slate-200 p-5 rounded-2xl flex flex-col justify-between hover:border-sky-400 transition shadow-sm group">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-purple-50 p-3 rounded-lg text-purple-600 group-hover:bg-purple-500 group-hover:text-white transition">
+                            <i class="fas fa-robot text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">IA Generativa</h4>
+                            <p class="text-sm text-slate-500">MIT Professional Education | Santander</p>
+                            <p class="text-xs text-sky-600 font-medium mt-1">10 Sep 2025</p>
+                        </div>
+                    </div>
+                    <a href="URL_O_RUTA_DEL_PDF" target="_blank" class="mt-4 text-center text-xs font-bold text-purple-600 bg-purple-50 py-2 rounded-lg hover:bg-purple-100 transition">
+                        <i class="fas fa-external-link-alt mr-1"></i> Ver Credencial
+                    </a>
+                </div>
+
+                <div class="bg-white border border-slate-200 p-5 rounded-2xl flex flex-col justify-between hover:border-sky-400 transition shadow-sm group">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-yellow-50 p-3 rounded-lg text-yellow-600 group-hover:bg-yellow-500 group-hover:text-white transition">
+                            <i class="fab fa-python text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Programación en Python</h4>
+                            <p class="text-sm text-slate-500">Santander Open Academy</p>
+                            <p class="text-xs text-sky-600 font-medium mt-1">20 Oct 2025</p>
+                        </div>
+                    </div>
+                    <a href="URL_O_RUTA_DEL_PDF" target="_blank" class="mt-4 text-center text-xs font-bold text-yellow-700 bg-yellow-50 py-2 rounded-lg hover:bg-yellow-100 transition">
+                        <i class="fas fa-external-link-alt mr-1"></i> Ver Credencial
+                    </a>
+                </div>
+
+                <div class="bg-white border border-slate-200 p-5 rounded-2xl flex flex-col justify-between hover:border-sky-400 transition shadow-sm group">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-50 p-3 rounded-lg text-green-600 group-hover:bg-green-500 group-hover:text-white transition">
+                            <i class="fas fa-brain text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Gestión del Estrés</h4>
+                            <p class="text-sm text-slate-500">Santander Open Academy</p>
+                            <p class="text-xs text-sky-600 font-medium mt-1">10 Nov 2025</p>
+                        </div>
+                    </div>
+                    <a href="URL_O_RUTA_DEL_PDF" target="_blank" class="mt-4 text-center text-xs font-bold text-green-700 bg-green-50 py-2 rounded-lg hover:bg-green-100 transition">
+                        <i class="fas fa-external-link-alt mr-1"></i> Ver Credencial
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-slate-200 bg-white text-center">
+        <p class="text-slate-500 text-sm font-medium">
+            © 2026 Oscar Santiago Fonseca Gómez. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
